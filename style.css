@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    background-image: url(12.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img{ 
+    width: 50vw;
+    height: 20vh;
+    font-family: 'Audiowide';
+    color: white;
+    line-height: initial;
+   
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+}
+.img {
+    font-size: 30px;
+}
+.img p{
+    color: white;
+    font-size: 18px;
+
+}
+
+.navbar{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.navbar-nav{
+    margin-top: 0;
+}
+.collapse {
+    width: 70%;
+    justify-content: right;
+    align-items: flex-end;
+    margin-left: 50%;
+    font-size: 18px;
+    font-weight: bolder;
+    padding-left: 0px;
+    padding-right: 20px;
+    align-items: flex-end;
+    word-spacing: 20px;
+    letter-spacing: 2.5px;
+}
+.collapse .nav-item :hover{
+    background-color: white;
+}
+.collapse .navbar-nav .nav-item a:hover{
+    color: black;
+    transform: translateY(-3px);
+}
+.content{ 
+    background-color: rgba(97, 91, 91, 0.1);
+    margin: 16% auto;
+    text-align:center;
+    height: 45vh;
+    width: 60vw;
+    color: white;
+}
+.content p{
+    font-size: 6.7vh;
+    font-weight: bolder;
+}
+.content .btn{
+    padding: 0px 20px 5px 20px;
+    font-size: 26px;
+    font-weight: bolder;
+    margin-top: 2%;
+    margin-bottom: 0;
+    border-radius: 8px;
+}
+.content .btn:hover{
+    transform: translateY(-6px);
+    
+}

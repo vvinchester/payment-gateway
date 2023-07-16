@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    overflow-x: hidden;
+    font-size:'DM Serif Text', serif;
+}
+.first{
+    height: 140vh;
+    width: 100vw;
+    border: 2ps solid black;
+    background-image: url(back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.89;
+}
+.paybutton{
+    padding: 0px 20px 5px 20px;
+    font-size: 26px;
+    background-color: brown;
+    color: rgb(215, 186, 186);
+    border-color: brown;
+    font-weight: bolder;
+    margin-top: 2%;
+    margin-bottom: 0;
+    border-radius: 8px;
+}
+.sec{
+    background-color:rgba(255, 255, 255, 0.269);
+    width: 55%;
+    height: 48%;
+    margin: 10vh auto 5vh;
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 1%;
+}
+.sec p{
+   
+    font-size: 28px;
+    color :rgb(0, 0, 0);
+    font-weight: lighter;
+}
+.sec form{
+    margin: 7vh;
+}

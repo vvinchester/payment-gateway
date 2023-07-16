@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link href="donate.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <div class="first">
+      <div class="sec">
+           <p>
+            Your donation speaks volumes,
+            A gift that truly humbles.
+            With few words, yet great impact,
+            You've shown compassion's exact. <br>   
+            In your selflessness, lives are touched,
+            Hearts are lifted, spirits rushed.
+            Gratitude fills every space,
+            For your generous embrace. <br>
+            Thank you for the funds you share,
+            For showing others that you care.
+            Your act of giving, small or grand,
+            Creates a ripple across the land.
+            </p>
+            <!-- Your website content here -->
+          
+            <button class="paybutton"id="payButton" >Pay Now</button>
+            
+          </div>
+            
+            <script>
+              // Function to handle the payment process
+              function performPayment() {
+                // Replace 'your_razorpay_api_key' with your actual Razorpay API key
+                const razorpayKey = 'rzp_test_Q0MzsDDvTrJmqZ';
+          
+                const options = {
+                  key: razorpayKey,
+                  amount:200, // Replace with the actual amount to be charged (in paisa)
+                  currency: 'INR', // Replace with the appropriate currency code
+                  name: 'Valyrie Valor',
+                  description: 'Payment for Donation',
+                  image: '14.png', // Replace with the URL of your logo (optional)
+                  handler: function (response) {
+                    // This function will be called after successful payment
+                    // You can handle the payment success logic here
+                    console.log('Payment ID:', response.razorpay_payment_id);
+                    console.log('Payment success!');
+                  },
+                  prefill: {
+                    email: 'vibharajput08022002@gmail.com', // Replace with the user's email (if available)
+                    contact: '+91 9568000002', // Replace with the user's phone number (if available)
+                  },
+                };
+          
+                // Create a new Razorpay checkout instance
+                const razorpay = new Razorpay(options);
+          
+                // Open the Razorpay payment popup when the Pay button is clicked
+                document.getElementById('payButton').onclick = function () {
+                  razorpay.open();
+                };
+              }
+          
+              // Call the function to set up the payment process
+              performPayment();
+            </script>
+          
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!--button id="payButton">Pay Now</button>
+
+script
+  src="https://checkout.razorpay.com/v1/payment-button.js" class="button"
+  data-payment_button_id="7e31cc93ef2ee338"
+  async
+></script>
+<script>
+  // Replace 'your_razorpay_api_key' with your actual Razorpay API key
+  const razorpayKey = 'rzp_test_Q0MzsDDvTrJmqZ';
+
+  // Function to handle the payment process
+  function performPayment() {
+    const options = {
+      key: razorpayKey,
+      amount: 200, // Replace with the actual amount to be charged (in paisa)
+      currency: 'INR', // Replace with the appropriate currency code
+      name: 'Valkyrie Valore',
+      description: 'Payment for Donation',
+      handler: function (response) {
+        // This function will be called after successful payment
+        // You can handle the payment success logic here
+        console.log('Payment ID:', response.razorpay_payment_id);
+        console.log('Payment success!');
+      },
+      prefill: {
+        email: 'vibharajput08022002@gmail.com', // Replace with the user's email (if available)
+        contact: '+91 9568000002', // Replace with the user's phone number (if available)
+      },
+    };
+
+    // Create a new Razorpay checkout instance
+    const razorpay = new Razorpay(options);
+
+    // Open the Razorpay payment popup when the Pay button is clicked
+    document.getElementById('payButton').onclick = function () {
+      razorpay.open();
+    };
+  }
+</script>
+ <script>
+  // Call the function to set up the payment process
+  performPayment();
+</script-->
